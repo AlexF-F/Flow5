@@ -17,7 +17,7 @@
 3.Instalar los nodos node-red-dashboard. Para ello, dirigete a la opcion "Manage Palet" de NodeRed y en la pestaña Install busca node-red-dashboard. Finalmente haz clic en instalar.
 4.Instalación de Broker local Mosquitto MQTT.
 #### Instrucciones de operacion
-- Arrancar NodeRed con el comando node-red
+- Arrancar NodeRed con el comando <code> node-red </code>
 - Importar el flow del repositorio.
 - Coloca tu API Key personal en la API Call del nodo HTTP Request.
 - Actualiza la IP del broker público.
@@ -27,11 +27,11 @@
 
 #### Notas
 - La sección manual de este flow se suscribe al tema codigoIoT/fow5/mqtt en un broker local.
-- El mensaje mqtt usado para probar este flow es mosquitto_pub -h localhost -t ccodigoIoT/fow5/mqtt -m '{"ID":"Hugo Vargas","temp":18,"hum":78}'
+- El mensaje mqtt usado para probar este flow es mosquitto_pub -h localhost -t ccodigoIoT/fow5/mqtt -m '{"ID":"Alejandro Flores","temp":18,"hum":78}'
 - Para que la gráfica historica muestre información, deben enviarse al menos 2 puntos.
 - Para actualizar la IP del broker publico, se recomienda el siguiente comando nslookup broker.hivemq.com. Puedes usar el broker publico de tu elección.
 - Para que multiples graficas sean mostradas en la sección de Histórico Público, es necesario que multiples usuarios se encuentren publicando a la vez.
-- Para enviar mensaje al broker escribir la siguiente linea en terminal <code> mosquitto_pub -h 3.124.50.83  -t codigoIoT/flow5/mqtt/clima -m '{"ID":"Hugo Vargas","temp":18,"hum":78}'</code>
+- Para enviar mensaje al broker escribir la siguiente linea en terminal <code> mosquitto_pub -h 3.124.50.83  -t codigoIoT/flow5/mqtt/clima -m '{"ID":"Alejandro Flores Mor Acatlipa","temp":18,"hum":78}'</code>
 - Para suscribirse y ver las publicaciones a traves de la terminal escribir este code en la terminal <code> mosquitto_sub -h 3.124.50.83 -t codigoIoT/flow5/mqtt/clima </code>
 #### Resultados y conclusiones 
 
